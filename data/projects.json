@@ -1,0 +1,14 @@
+[
+    {
+      "id": "authflow",
+      "title": "SaaS - Flow d'Onboarding",
+      "results": "+70% d'inscriptions",
+      "preview": "/emails/authflow-welcome.jpg",
+      "tech": ["React Email", "Resend API"],
+      "content": {
+        "client": "Startup SaaS (anonymisée)",
+        "problem": "Taux de complétion d'onboarding < 30%",
+        "solution": "Séquence de 3 emails triggers basés sur l'activité utilisateur"
+      }
+    }
+  ]
