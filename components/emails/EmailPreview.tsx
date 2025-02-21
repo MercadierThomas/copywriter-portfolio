@@ -2,9 +2,14 @@
 
 import { useState } from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
-export const EmailPreview = ({ htmlCode, textVersion }) => {
-  const [viewMode, setViewMode] = useState('design')
+type EmailPreviewProps = {
+  htmlCode: string
+}
+
+export const EmailPreview = ({ htmlCode } : EmailPreviewProps) => {
+  const [viewMode, setViewMode] = useState<'design' | 'code'>('design')
 
   return (
     <div className="border border-gray-700 rounded-lg overflow-hidden">
@@ -23,13 +28,12 @@ export const EmailPreview = ({ htmlCode, textVersion }) => {
         </button>
       </div>
       
-      {viewMode === 'design' ? (
-        <iframe 
-          className="w-full h-96 bg-white"
-          srcDoc={htmlCode}
-        />
-      ) : (
-        <SyntaxHighlighter language="html">
+      {viewMode === 'code' && (
+        <SyntaxHighlighter 
+          language="html" 
+          style={vscDarkPlus}
+          customStyle={{ margin: 0 }}
+        >
           {htmlCode}
         </SyntaxHighlighter>
       )}

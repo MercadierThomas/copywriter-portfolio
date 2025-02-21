@@ -1,15 +1,6 @@
-import { TerminalHeader } from "@/components/layout/TerminalHeader";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { TerminalHeader } from "@/components/layout/TerminalHeader"
+import { ProjectCard } from '@/components/projects/ProjectCard'
+import projects from '@/data/projects.json'
 
 export default function Home() {
   return (
@@ -32,6 +23,15 @@ export default function Home() {
         </ul>
       </div>
     </section>
+
+    <section className="max-w-4xl mx-auto px-4 py-12">
+  <h2 className="text-3xl font-bold mb-8">Case Studies</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    {projects.map((project) => (
+      <ProjectCard key={project.id} project={project} />
+    ))}
+  </div>
+</section>
   </main>
   );
 }

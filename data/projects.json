@@ -8,7 +8,9 @@
       "content": {
         "client": "Startup SaaS (anonymisée)",
         "problem": "Taux de complétion d'onboarding < 30%",
-        "solution": "Séquence de 3 emails triggers basés sur l'activité utilisateur"
+        "solution": "Séquence de 3 emails triggers basés sur l'activité utilisateur",
+        "emailCode": "<!DOCTYPE html>\n<html>\n<head>\n  <style>\n    .cta-button {\n      background: #FF4D4D;\n      padding: 12px 24px;\n      border-radius: 4px;\n      color: white !important;\n    }\n  </style>\n</head>\n<body>\n  <div style=\"font-family: sans-serif; padding: 20px;\">\n    <h1 style=\"color: #FF4D4D;\">Bienvenue chez AuthFlow 🚀</h1>\n    <a href=\"{{{RESET_LINK}}}\" class=\"cta-button\">Confirmer mon email</a>\n  </div>\n</body>\n</html>"
       }
+      
     }
   ]
