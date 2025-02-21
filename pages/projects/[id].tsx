@@ -27,7 +27,7 @@ const ProjectPage = ({ project }: ProjectCardProps) => (
     <TerminalHeader />
     <Link 
         href="/"
-        className="inline-block mb-8 text-email-primary hover:underline"
+        className="inline-block mb-8 ml-5 text-email-primary hover:underline"
         >
         ← Retour aux projets
     </Link>

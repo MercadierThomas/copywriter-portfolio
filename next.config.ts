@@ -1,8 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactStrictMode: true,
+  experimental: {
+    turbo: {
+      resolveAlias: {
+        '@getbrevo/brevo': require.resolve('@getbrevo/brevo')
+      }
+    }
+  }
 };
 
 export default nextConfig;

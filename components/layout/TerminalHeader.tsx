@@ -6,9 +6,9 @@ export const TerminalHeader = () => (
     transition={{ repeat: Infinity, duration: 3 }}
     className="ml-2"
   >
-    <div className="bg-code-bg p-4 font-mono">
+    <div className="bg-code-bg p-4 font-mono border-b border-email-primary">
       <span className="text-email-primary">$</span> 
-      <span className="text-gray-300 ml-2">thomas_dev_portfolio --mode=email-expert</span>
+      <span className="text-gray-300 ml-2">portfolio --expertise=email-marketing --tech=react</span>
     </div>
   </motion.span>
   )
