@@ -11,6 +11,26 @@
         "solution": "Séquence de 3 emails triggers basés sur l'activité utilisateur",
         "emailCode": "<!DOCTYPE html>\n<html>\n<head>\n  <style>\n    .cta-button {\n      background: #FF4D4D;\n      padding: 12px 24px;\n      border-radius: 4px;\n      color: white !important;\n    }\n  </style>\n</head>\n<body>\n  <div style=\"font-family: sans-serif; padding: 20px;\">\n    <h1 style=\"color: #FF4D4D;\">Bienvenue chez AuthFlow 🚀</h1>\n    <a href=\"{{{RESET_LINK}}}\" class=\"cta-button\">Confirmer mon email</a>\n  </div>\n</body>\n</html>"
       }
-      
+    },
+    {
+      "id": "nebula-wear",
+      "title": "NebulaWear - Séquence Panier Abandonné",
+      "results": "-42% d'abandons | +19% de CA mensuel",
+      "previewMetrics": {
+        "openRate": "68.3%",
+        "ctr": "31.1%",
+        "roi": "24:1"
+      },
+      "content": {
+        "client": "Marque de prêt-à-porter techno-responsable (CA: 850k€/an)",
+        "problem": "Taux d'abandon de panier >65% sur la collection phare",
+        "solution": "Séquence de 3 emails avec storytelling produit et quiz interactif",
+        "emailCode": {
+          "email1": "<!DOCTYPE html>...",
+          "email2": "<!DOCTYPE html>...",
+          "email3": "<!DOCTYPE html>..."
+        }
+      },
+      "tech": ["Klaviyo", "Shopify Liquid", "GSAP", "PostgreSQL"]
     }
   ]
