@@ -1,0 +1,18 @@
+Sujet : Votre clé API est prête 🚀 (3 étapes pour commencer)
+
+Bonjour {Prénom},
+
+Votre compte AuthFlow est presque opérationnel ! 
+
+Voici votre clé API unique :
+🔑 {API_KEY}
+
+**Prochaines étapes :**
+1. Consultez notre guide [Installation en 5 min]
+2. Testez votre première intégration
+3. Rejoignez notre communauté Slack
+
+Besoin d'aide ? Répondez simplement à cet email.
+
+Bonne journée,
+Julien, CTO @ AuthFlow
